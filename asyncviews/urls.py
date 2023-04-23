@@ -21,6 +21,7 @@ from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     # path('api/', views.api),
-    path('api/', views.async_view),
-    path('sync/', views.sync_view),
+    # path('api/', views.async_view),
+    # path('sync/', views.sync_view),
+    path('sync/', views.http_call_async),
 ]
